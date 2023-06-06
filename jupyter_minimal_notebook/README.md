@@ -21,6 +21,10 @@ docker container logs jupyter-notebook-dig-01
 Ingresando a http://localhost:18888/?token=<token> en un navegador web.
 El token se imprime por pantalla al desplegar el contenedor o se consulta en el log del contenedor.
 
+## Cómo conectarse a la consola del contenedor
+
+`docker exec -it jupyter-notebook-dig-01 /bin/bash`
+
 ## Cómo eliminar el contenedor
 
 ```
