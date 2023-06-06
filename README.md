@@ -1,8 +1,10 @@
 # Curso de Docker para la Dirección de Información Geoespacial
+
 Este repositorio tiene el objetivo resguardar distintos ejemplos de herramientas útiles para el desarrollo orientado a la DIG.
 Se compone de distintos directorios con recetas de imágenes de Docker.
 
 ## Jupyter Minimal Notebook (jupyter_minimal_notebook)
+
 Jupyter Docker Stacks are a set of ready-to-run [Docker images](https://hub.docker.com/u/jupyter) containing Jupyter applications and interactive computing tools.
 You can use a stack image to do any of the following (and more):
 
@@ -20,6 +22,8 @@ It contains:
 - Everything in jupyter/base-notebook
 - Common useful utilities like git, nano (actually nano-tiny), tzdata, unzip and vi (actually vim-tiny),
 - TeX Live for notebook document conversion
+
+En el sitio web [towardsdatascience](https://towardsdatascience.com/how-to-run-jupyter-notebook-on-docker-7c9748ed209f) pueden ver un tutorial completo de cómo desplegar jupyter/minimal-notebook
 
 ## Postgres with Postgis (postgres_postgis)
 
