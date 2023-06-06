@@ -25,6 +25,8 @@ It contains:
 
 En el sitio web [towardsdatascience](https://towardsdatascience.com/how-to-run-jupyter-notebook-on-docker-7c9748ed209f) pueden ver un tutorial completo de cómo desplegar jupyter/minimal-notebook
 
+Un listado completo de versiones de imágenes se encuentra en [https://github.com/jupyter/docker-stacks/#using-old-images](https://github.com/jupyter/docker-stacks/#using-old-images).
+
 ## Postgres with Postgis (postgres_postgis)
 
 The [postgis/postgis](https://hub.docker.com/r/postgis/postgis) image provides tags for running Postgres with PostGIS extensions installed. This image is based on the official postgres image and provides debian and alpine variants for PostGIS 3.3.x for each supported version of Postgres (11, 12, 13, 14 and 15). Additionally, an image version is provided which is built from the latest two versions of Postgres (14, 15) with versions of PostGIS and its dependencies built from their respective master branches.
