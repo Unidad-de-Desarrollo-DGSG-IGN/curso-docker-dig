@@ -1,6 +1,6 @@
 # Jupyter Minimal Notebook (jupyter_minimal_notebook)
 
-## C'po'mo crear la imagen
+## Cómo crear la imagen
 
 `docker image build -t jupyter-notebook-dig .`
 
