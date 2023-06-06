@@ -6,12 +6,12 @@
 
 ## Cómo desplegar
 
-`docker container run -p 18888:8888 -v .\workspace\:/home/jovyan --name jupyter-notebook-dig-01 jupyter-notebook-dig`
+`docker container run -p 18888:8888 -v .\workspace:/home/jovyan --name jupyter-notebook-dig-01 jupyter-notebook-dig`
 
 ## Cómo desplegar en segundo plano (y obtener el token)
 
 ```
-docker container run -d -p 18888:8888 -v .\workspace\:/home/jovyan --name jupyter-notebook-dig-01 jupyter-notebook-dig
+docker container run -d -p 18888:8888 -v .\workspace:/home/jovyan --name jupyter-notebook-dig-01 jupyter-notebook-dig
 
 docker container logs jupyter-notebook-dig-01
 ```
