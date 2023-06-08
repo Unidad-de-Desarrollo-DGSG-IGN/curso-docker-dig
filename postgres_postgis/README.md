@@ -1,4 +1,4 @@
-# Jupyter Minimal Notebook (jupyter_minimal_notebook)
+# Postgres with Postgis (postgres_postgis)
 
 ## Cómo desplegar
 
