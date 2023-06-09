@@ -19,34 +19,22 @@ Se compone de distintos directorios con recetas de imágenes de Docker.
 
 ## Que es Docker?
 
-<img src="./img/02_que_es_docker_ecosistema.png"/>
+<img height="300px" src="./img/02_que_es_docker_ecosistema.png"/>
 
 
-<img src="./img/01_que_es_docker.png"/>
+<img height="300px" src="./img/01_que_es_docker.png"/>
 
 
 ## Porque se usa Docker?
 
-<img src="./img/00_flujo_trabajo_previo_docker.png"/>
+<img height="400px" src="./img/00_flujo_trabajo_previo_docker.png"/>
 
-Docker hace mas facil la instalacion de software sin preocuparse acerca de la configuracion o dependencias
+Docker hace mas facil la instalacion de software sin preocuparse acerca de la configuracion o dependencias.
 
 Basicamente resuelve 3 grandes campos:
 * Aislacion (Isolation)
 * Ambientes (Environments)
-* Velocidad (...del negocio)
-
-### Un par de servidores caros
-
-<img height="300px" src="./img/00_isolation.png"/>
-
-### Una app, una Virtual Machine
-
-<img height="300px" src="./img/00_environment.png"/>
-
-### Velocidad del negocio
-
-<img height="300px" src="./img/00_environment.png"/>
+* Velocidad del negocio
 
 
 ## Que innovaciones trae docker?
@@ -62,7 +50,7 @@ Conceptos claves en el ecosistema de contenedores de Docker:
 
 ## Docker Client y Docker Server
 
-<img src="./img/03_docker_client_server.png"/>
+<img  height="400px" src="./img/03_docker_client_server.png"/>
 
 ## Como obtener Docker
 
@@ -91,6 +79,8 @@ Observaciones:
 
 # Imagen
 
+## Que es una imagen?
+
 * Una imagen se la puede pensar como paquete universal de aplicaciones/software.
 * Una imagen es una especia de "foto" (snapshot) de archivos de sistemas necesarios para correr un programa en un contenedor. 
 * Tambien tiene un comando de inicio.
@@ -101,6 +91,27 @@ Observaciones:
 
 <img src="./img/05_imagen_pasos.png"/>
 
+## Como se usa una imagen?
+
+### Listar imagenes en cache
+
+```bash
+docker images
+```
+
+### Descargar una imagen de la nube
+
+```bash
+docker image pull <id/tag de la imagen>
+```
+
+### Borrar una imagen
+
+```bash
+docker image <id/tag de la imagen>
+```
+
+### 
 
 ***
 ***
@@ -115,25 +126,25 @@ Observaciones:
 
 Ejemplo
 
-<img src="./img/07_contenedor_proceso.png"/>
+<img height="400px" src="./img/07_contenedor_proceso.png"/>
 
 *** 
 
-<img src="./img/08_contenedor_proceso.png"/>
+<img height="400px" src="./img/08_contenedor_proceso.png"/>
 
 *** 
 
-<img src="./img/09_contenedor_proceso.png"/>
+<img height="400px" src="./img/09_contenedor_proceso.png"/>
 
 *** 
 
 Estas acciones estan preparadas para usarse en sistemas operativos Linux.
 
-<img src="./img/10_contenedor_proceso.png"/>
+<img height="350px" src="./img/10_contenedor_proceso.png"/>
 
 ***
 
-<img src="./img/11_contenedor_proceso.png"/>
+<img height="400px" src="./img/11_contenedor_proceso.png"/>
 
 ***
 
@@ -142,7 +153,7 @@ Conclusiones de que es un contenedor
 * Un contenedor es un proceso corriendo que posee un subconjunto de recursos fisico de una computadora.
 * Asegura un identico runtime environment
 
-<img src="./img/12_contenedor_proceso.png"/>
+<img height="400px" src="./img/12_contenedor_proceso.png"/>
 
 ***
 
@@ -152,7 +163,7 @@ Conclusiones de que es un contenedor
 
 Imagen completa de como corre un contenedor sobre sistemas operativos como Mac o Windows.
 
-<img src="./img/14_contenedor_proceso.png"/>
+<img height="400px" src="./img/14_contenedor_proceso.png"/>
 
 
 ***
@@ -183,18 +194,13 @@ Sobreescritura del comando inicial
 
 ## Crear y correr contenedores
 
-### STDIN STDERR STDOUT
-
-* `-a` attach
-* `-d` detach
-
-<img src="./img/25_comando_en_contenedor.png"/>
-
-***
+### Listar contenedores activos
 
 <img src="./img/18_ps.png"/>
 
 ***
+
+### Crear y correr
 
 <img src="./img/18_run_create_start.png"/>
 
@@ -208,6 +214,14 @@ Sobreescritura del comando inicial
 
 <img src="./img/20_run_create_start.png"/>
  
+***
+### STDIN STDERR STDOUT
+
+* `-a` attach
+* `-d` detach
+
+<img src="./img/25_comando_en_contenedor.png"/>
+
 ***
 
 ## Logs
@@ -251,23 +265,30 @@ docker system prune
 
 ***
 
-## Borrar imagenes
+## Borrar contenedores
 
 ```bash
-docker image rm <id/tag de la imagen>
+docker container rmi <id/tag de la imagen>
 ```
 
-***
+<!-- ***
 
 ## 
 
 ```bash
 docker 
-```
+``` -->
 
 ***
 
 ## Como crear una imagen a traves de Dockerfile
+
+Proceso iterativo mediante uso de la terminal interior del contenedor.
+
+> Tip:
+> Cada linea del Dockerfile es una capa al momento de construir una imagen.
+> La variacion de debe ser menor desde las primeras lineas.
+> Ordenar bien un Dockerfile ayuda a que ante variaciones de la receta para construir una imagen sea un proceso mas rapido al reutilizar cache de las capas.
 
 ***
 ***
@@ -330,27 +351,8 @@ docker container logs <id del contenedor>
 
 ```
 
-## Cheatsheet y guia de aprendizaje de comandos
-
-```bash
-docker version
-
-docker <comando> --help
-docker version --help
-
-docker images --help
-docker images
-
-docker image build --help
-docker image build -t <tag/nombre que va a tener la imagen> <ubicacion Dockerfile>
-docker image build -t <usuario>/<imagen> .
-
-
-docker container run --help
-docker container run <nombre de imagen>
-docker container run --name <nombre que va a tener el contenedor> <nombre de imagen>
-
-```
+***
+***
 
 ## Jupyter Minimal Notebook (jupyter_minimal_notebook)
 
