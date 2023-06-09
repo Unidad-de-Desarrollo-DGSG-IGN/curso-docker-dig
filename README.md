@@ -29,6 +29,16 @@ Se compone de distintos directorios con recetas de imágenes de Docker.
 
 <img height="400px" src="./img/00_flujo_trabajo_previo_docker.png"/>
 
+***
+
+<img height="400px" src="./img/00_matrix-from-hell.png"/>
+
+***
+
+<img height="300px" src="./img/00_solution-matrixfromhell1.webp"/>
+
+***
+
 Docker hace mas facil la instalacion de software sin preocuparse acerca de la configuracion o dependencias.
 
 Basicamente resuelve 3 grandes campos:
