@@ -1,7 +1,10 @@
 # Curso de Docker para la Dirección de Información Geoespacial
 
-Este repositorio tiene el objetivo resguardar distintos ejemplos de herramientas útiles para el desarrollo orientado a la DIG.
-Se compone de distintos directorios con recetas de imágenes de Docker.
+Este repositorio tiene el objetivo resguardar explicaciones teóricas sobre Docker y distintos ejemplos de herramientas útiles para el desarrollo orientado a la DIG.
+
+Para revisar el contenido teórico, el mismo se encuentra en el apartado actual (a continuación).
+
+Para revisar los ejemplos de imágenes y contenedores Docker, acceder a [examples.md](examples.md)
 
 ## Docker TODO
 
