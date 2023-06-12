@@ -1,5 +1,6 @@
 # Ejemplos de contenedores Docker
 Este apartado tiene el objetivo listar distintos ejemplos de herramientas útiles para el desarrollo orientado a la DIG.
+
 Se cuentan con distintos directorios con recetas de imágenes de Docker o instrucciones de Docker listas para funcionar.
 
 ## Jupyter Minimal Notebook (jupyter_minimal_notebook)
